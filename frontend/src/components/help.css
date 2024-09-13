@@ -1,0 +1,85 @@
+.help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #000; /* Черный фон для всей страницы */
+    color: #fff; /* Белый текст */
+  }
+  
+  .help-header {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px; /* Увеличено расстояние снизу */
+    text-align: center;
+  }
+  
+  .headerText {
+    margin: 0;
+    font-size: 32px; /* Увеличен размер шрифта */
+  }
+  
+  .help-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Ширина формы соответствует ширине текстового поля */
+  }
+  
+  .inputGroup {
+    display: flex;
+    justify-content: space-between; /* Расстояние между полями ввода */
+    margin-bottom: 20px; /* Увеличено расстояние снизу */
+    width: 100%;
+  }
+  
+  .help-input {
+    width: calc(
+      50% - 25px
+    ); /* Ширина полей ввода с учетом расстояния между ними */
+    padding: 15px; /* Увеличен паддинг */
+    font-size: 18px; /* Увеличен размер шрифта */
+    border: 1px solid #aaa; /* Серый цвет окантовки */
+    border-radius: 5px;
+    background-color: #333; /* Темный фон для полей ввода */
+    color: #fff; /* Белый текст в полях ввода */
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .textarea {
+    width: 100%; /* Ширина текстового поля */
+    height: 150px; /* Высота текстового поля */
+    padding: 15px; /* Увеличен паддинг */
+    font-size: 18px; /* Увеличен размер шрифта */
+    border: 1px solid #aaa; /* Серый цвет окантовки */
+    border-radius: 5px;
+    background-color: #333; /* Темный фон для текстовой области */
+    color: #fff; /* Белый текст в текстовой области */
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .button-submit {
+    width: 100%; /* Ширина кнопки соответствует ширине формы */
+    height: 40px; /* Высота кнопки */
+    background-color: #007bff; /* Синий фон */
+    color: #fff; /* Белый текст */
+    padding: 10px;
+    font-size: 18px; /* Увеличен размер шрифта */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 20px; /* Расстояние от текстового поля */
+  }
+  @media (max-width: 960px) {
+    .help-form {
+      width: 80%;
+    }
+  }
